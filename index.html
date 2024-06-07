@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Quizzes are Quizzical</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background: linear-gradient(to right, blue, purple, red);
+        }
+        .title {
+            font-size: 48px;
+            text-align: center;
+            margin: 20px 0;
+            color: white;
+        }
+        .button-container {
+            display: flex;
+            flex: 1;
+            padding: 10px;
+        }
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 64px;  
+            font-style: italic; 
+            text-decoration: none;
+            color: white;
+            flex: 1;
+            margin: 10px;
+            padding: 40px;
+            border-radius: 20px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .login-button {
+            background-color: rgba(255, 0, 0, 0.8);
+        }
+        .login-button:hover {
+            background-color: darkred;
+            transform: scale(1.05);
+        }
+        .signup-button {
+            background-color: rgba(0, 0, 255, 0.8);
+        }
+        .signup-button:hover {
+            background-color: darkblue;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="title">if quizzes are quizzical</div>
+    <div class="button-container">
+        <a href="signup.php" class="button signup-button">Signup</a>
+        <a href="login.php" class="button login-button">Log in</a>
+    </div>
+</body>
+</html>
